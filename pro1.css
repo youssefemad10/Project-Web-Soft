@@ -1,0 +1,97 @@
+/* start global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-colr: #9c19fa;
+    --transparent-color: rgba(82, 0, 149, 0.7);
+    --section-padding: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width :768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* midium */
+@media (min-width :992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width :1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* main heading "component" */
+.section {
+    padding: 100px;
+}
+
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.main-heading ::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: black;
+}
+
+.main-heading h2::after {
+    content: '';
+}
+
+.main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    background-color: #777;
+    ;
+}
